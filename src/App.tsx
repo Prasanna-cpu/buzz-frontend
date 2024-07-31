@@ -7,7 +7,7 @@ const App:React.FC = () => {
     return (
         <div>
             <Routes>
-                <Route path={"/"} element={true?<Homepage/> : <Authentication/>}></Route>
+                <Route path={"/*"} element={true?<Homepage/> : <Authentication/>}></Route>
             </Routes>
         </div>
     );

@@ -26,4 +26,4 @@ dist-ssr
 
 tailwind.config.js
 
-vite.config.ts
+./vite.config.ts

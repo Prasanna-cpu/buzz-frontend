@@ -15,7 +15,9 @@ const validationSchema=Yup.object().shape({
 
 const HomeSection:React.FC=()=>{
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [uploadingImage,setUploadingImage]=useState<boolean>(false)
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [selectedImage,setSelectedImage]=useState<string | null | ArrayBuffer>('')
 
     const handleSubmit=(values)=>{

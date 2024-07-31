@@ -1,9 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 import SearchIcon from '@mui/icons-material/Search';
-import Brightness6Icon from '@mui/icons-material/Brightness6';
+import Brightness6Icon from '@mui/icons-material/Brightness6'
 import {Button} from "@mui/material";
+import SubscriptionModal from "../SubscriptionModal/SubscriptionModal.tsx";
 
 const LatestAndTrending: React.FC= () => {
+
+    const [openSubscriptionModal,setOpenSubscriptionModal]=useState(false)
+
+    function handleOpenSubscriptionModal(){
+        setOpenSubscriptionModal(true)
+    }
+
+    function handleCloseSubscriptionModal(){
+        setOpenSubscriptionModal(false)
+    }
 
     function toggleTheme(){
 
@@ -27,7 +38,7 @@ const LatestAndTrending: React.FC= () => {
                 <h1 className={"text-xl font-bold"}>Get Verified</h1>
                 <h1 className={"font-bold my-2"}>Subscribe to unlock new features</h1>
 
-                <Button variant={"contained"} sx={{padding:"10px",paddingX:"20px",borderRadius:"25px"}}>
+                <Button variant={"contained"} sx={{padding:"10px",paddingX:"20px",borderRadius:"25px"}} onClick={handleOpenSubscriptionModal}>
                     Get Verified
                 </Button>
 
@@ -36,6 +47,11 @@ const LatestAndTrending: React.FC= () => {
                     <div>
                         <p className={"text-sm"}></p>
                     </div>
+                </section>
+
+
+                <section>
+                    <SubscriptionModal open={openSubscriptionModal} handleClose={handleCloseSubscriptionModal}/>
                 </section>
 
             </section>
