@@ -10,13 +10,7 @@ import TagFacesIcon from '@mui/icons-material/TagFaces';
 // import PostCard from "../PostCard/PostCard.tsx";
 import {useFormik} from "formik";
 import {useState} from "react";
-// import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
-// import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
-// import RepeatIcon from "@mui/icons-material/Repeat";
-// import FavoriteIcon from "@mui/icons-material/Favorite";
-// import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-// import BarChartIcon from "@mui/icons-material/BarChart";
-// import FileUploadIcon from "@mui/icons-material/FileUpload";
+
 
 const style = {
     position: 'absolute' as 'absolute',
